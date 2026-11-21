@@ -2,6 +2,8 @@
 // Writes one short poem about agency (the power to stop and to stay)
 // to /output/entry.txt. Deterministic: the same fixed text on every run.
 // Node 22 standard library only; no network, no randomness.
+// The poem is 241 characters (242 code points with the trailing newline),
+// inside the gate's 1–280 character window.
 
 import { mkdirSync, writeFileSync, chmodSync } from "node:fs";
 import { join } from "node:path";
